@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <!--Link to SCSS file-->
+        <link rel="stylesheet" href="styling/style.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script text="text/javascript" src="main.js"></script>
+        <title>News</title>
+    </head>
+    <body>
+        <!--Heading and Quote-->
+                <h1><div>NEWS</div></h1>
+                <p class="quote">“News travels fast in places where nothing much ever happens.” ― Charles Bukowski, Ham on Rye</p>
+    <div class="center-form">
+        <!--Form to subscribe to news letter and select what news you wanna sub to-->
+        <form>
+        <ul class="no-bullets">
+            <li><h2><label for="news">Please select the news you want to be updated on:</label></h2></li>
+            <input type="radio" id="Gaming" name="news" value="Gaming">
+            <label for="Gaming">Gaming News</label>
+            <input type="radio" id="Technology" name="news" value="Technology">
+            <label for="Technology">Technology</label>
+            <li><h3><label for="email">Please enter your email to subscribe to the newsletter:</label></h3></li>
+            <input type="text" id="email" name="email">
+            <input type="submit" value="Subscribe">
+        </ul>
+        </form>
+    </div>
+    <!--Table for different news links-->
+        <table width="100%">
+            <tr>
+                <td colspan="2"><h2>Please select the news you would like to access:</h2></td>
+            </tr>
+            <tr>
+                <!--Links to actual websites for different types of news-->
+                <td class="split-table"><p class="website"><a href="./games.html">Gaming News</a></p></td>
+                <td><p class="website"><a href="./technology.html">Tech News</a></p></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="center-form">
+                    <!--List of latest news of gaming-->
+                    <ul class="no-bullets">
+                        <li><h3>Latest Gaming News</h3></li>
+                        <li><p class="center"><a href="https://gamerant.com/video-game-release-dates-2023-new-upcoming/">2023 Video Game Release Date Calendar</a></p></li>
+                        <li><p class="center"><a href="https://gamerant.com/final-fantasy-14-whiskey/">Final Fantasy 14 Is Getting a Whiskey Based On Starter Cities</a></p></li>
+                        <li><p class="center"><a href="https://gamerant.com/street-fighter-6-aki-release-date/">Street Fighter 6 Confirms A.K.I. Release Date</a></p></li>
+                        <li><p class="center"><a href="https://gamerant.com/pokemon-fan-ceramic-jigglypuff-plate/">Pokemon Fan Creates Adorable Ceramic Jigglypuff Plate</a></p></li>
+                        <li><p class="center"><a href="https://gamerant.com/stardew-valley-the-board-game-re-release-pre-orders-open-when/">Stardew Valley: The Board Game is Getting a Re-Release</a></p></li>
+                    </ul>
+                    </div>
+                </td>
+                <td>
+                    <div class="center-form">
+                        <!--List of latest news of Tech-->
+                    <ul class="no-bullets">
+                        <li><h3>Latest Tech News</h3></li>
+                        <li><p class="center"><a href="https://www.theverge.com/2023/7/31/23813770/microsoft-windows-11-multiple-monitors-refresh-rate-improvements">Windows 11 is getting multiple monitor refresh rate improvements</a></p></li>
+                        <li><p class="center"><a href="https://www.wired.com/story/netflix-amazon-disney-max-streaming-wars-no-win/#intcid=_wired-verso-hp-trending_374d6423-39b8-4b3b-9541-d144a3ad503a_popular4-1">The Anticlimactic Death of the Streaming Wars</a></p></li>
+                        <li><p class="center"><a href="https://www.wired.com/story/gear-and-tips-to-make-professional-videos/">The Gear and Tips You Need to Make Studio-Grade Videos at Home</a></p></li>
+                        <li><p class="center"><a href="https://www.wired.com/story/tracking-screen-time-is-ruining-your-life/">Tracking Screen Time Is Ruining My Life</a></p></li>
+                        <li><p class="center"><a href="https://www.wired.com/story/aleph-alpha-europe-openai/">Meet Aleph Alpha, Europe's Answer to OpenAI</a></p></li>
+                    </div>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <div class="center-form">
+            <!-- Form to leave comments -->
+            <form class="comment-form">
+                <ul class="no-bullets">
+                    <li><h2><label for="comment">Leave a comment:</label></h2></li>
+                    <li><textarea id="comment" name="comment" rows="4" cols="50"></textarea></li>
+                    <li><input type="submit" value="Submit"></li>
+                </ul>
+            </form>
+        </div>
+        
+        <div class="center-form">
+            <!-- Form to like an item -->
+            <a class="like-button" href="https://example.com/article-to-like">
+                <h3>Article Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </a>
+        </div>
+        
+        <div class="center-form">
+            <!-- Form for contacting you -->
+            <form class="contact-form">
+                <ul class="no-bullets">
+                    <li><h2><label for="name">Your Name:</label></h2></li>
+                    <li><input type="text" id="name" name="name" required></li>
+                    <li><h2><label for="email">Your Email:</label></h2></li>
+                    <li><input type="email" id="email" name="email" required></li>
+                    <li><h2><label for="message">Your Message:</label></h2></li>
+                    <li><textarea id="message" name="message" rows="4" cols="50" required></textarea></li>
+                    <li><input type="submit" value="Send"></li>
+                </ul>
+            </form>
+        </div>
+
+        <p><a href="SaveForLater.html">Save for later</a></p>
+    </body>
+</html>

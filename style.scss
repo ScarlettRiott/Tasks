@@ -1,0 +1,74 @@
+$background-colour:rgb(227,113,0);
+$hyperlink-size :30px;
+$img-width :620px;
+$img-height :auto;
+$border-colour :rgb(14, 138, 99);
+$padding-colour :rgb(11,214,151);
+$td-width :50%;
+
+@mixin block {
+    border: 5px solid $border-colour;   
+    background-color: $padding-colour;
+    margin: 40px 50px;
+    padding: 30px;
+}
+
+body {
+    background: linear-gradient($background-colour,white);
+};
+
+h1 {
+   text-align: center;
+   font-size: 42px;
+};
+
+h2 {
+    text-align: center;
+};
+
+h3 {
+    text-align: center;
+    font-size: 24px
+};
+
+.title-block {
+    @include block;
+};
+
+.center-form {
+    @include block;
+    justify-content: center;
+    display: flex;
+};
+
+.quote {
+    font-style: italic;
+    font-size: small;
+    color: rgba(31, 30, 30, 0.904);
+    align-self: self-end;
+}
+
+.website {
+    font-size: $hyperlink-size;
+    text-align: center;
+}
+
+img{
+    width: $img-width;
+    height: $img-height;
+    border-radius: 25px;
+}
+
+.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.split-table {
+    width: $td-width;
+}
+
+.center {
+    text-align: center;
+}

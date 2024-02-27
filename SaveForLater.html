@@ -1,0 +1,18 @@
+<html>
+    <head>
+     <script type="text/javascript" src="main.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>      
+    </head>
+    <body id="body">
+        <h1>Saved Items for Later</h1>
+        <ul id="savedItemsList"></ul>
+        <script>
+            const savedItemsList = document.getElementById("savedItemsList");
+            savedItems.forEach(item => {
+                const listItem = document.createElement("li");
+                listItem.textContent = item;
+                savedItemsList.appendChild(listItem);
+            });
+        </script>
+    </body>
+</html>
